@@ -1,6 +1,13 @@
 <template>
-  <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
+  <main font-sans text="gray-700 dark:gray-200">
     <RouterView />
-    <TheFooter />
+    <div text="center 2xl" space-x-2xl>
+      <RouterLink btn to="/">
+        el
+      </RouterLink>
+      <RouterLink btn to="/my">
+        my
+      </RouterLink>
+    </div>
   </main>
 </template>
