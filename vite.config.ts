@@ -51,13 +51,17 @@ export default defineConfig({
         './src/composables',
       ],
       vueTemplate: true,
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver({
+        importStyle: 'sass',
+      })],
     }),
 
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver({
+        importStyle: 'sass',
+      })],
     }),
 
     // https://github.com/antfu/unocss
