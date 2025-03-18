@@ -5,6 +5,8 @@ import App from './App.vue'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
+import 'element-plus/theme-chalk/base.css'
+import 'element-plus/theme-chalk/el-button.css'
 import 'uno.css'
 
 const app = createApp(App)

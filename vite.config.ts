@@ -10,6 +10,7 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
+import Inspect from 'vite-plugin-inspect'
 
 export default defineConfig({
   resolve: {
@@ -62,6 +63,8 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
     UnoCSS(),
+
+    Inspect(),
   ],
 
   // https://github.com/vitest-dev/vitest
