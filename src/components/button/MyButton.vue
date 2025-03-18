@@ -66,7 +66,7 @@ const buttonKls = computed(() => [
 <template>
   <button :class="buttonKls" v-bind="_props" :style="customColor" @click="handleClick">
     <template v-if="loading">
-      <slots v-if="$slots.loading" name="loading" />
+      <slot v-if="$slots.loading" name="loading" />
       <el-icon v-else :class="ns.is('loading')">
         <component :is="loadingIcon" />
       </el-icon>

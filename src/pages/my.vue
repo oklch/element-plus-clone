@@ -1,8 +1,82 @@
 <script lang="ts" setup>
+import {
+  Check,
+  Delete,
+  Edit,
+  Message,
+  Search,
+  Star,
+} from '@element-plus/icons-vue'
 </script>
 
 <template>
-  <MyButton loading>
-    1
-  </MyButton>
+  <div class="mb-4">
+    <my-button>Default</my-button>
+    <my-button type="primary">
+      Primary
+    </my-button>
+    <my-button type="success">
+      Success
+    </my-button>
+    <my-button type="info">
+      Info
+    </my-button>
+    <my-button type="warning">
+      Warning
+    </my-button>
+    <my-button type="danger">
+      Danger
+    </my-button>
+  </div>
+
+  <div class="mb-4">
+    <my-button plain>
+      Plain
+    </my-button>
+    <my-button type="primary" plain>
+      Primary
+    </my-button>
+    <my-button type="success" plain>
+      Success
+    </my-button>
+    <my-button type="info" plain>
+      Info
+    </my-button>
+    <my-button type="warning" plain>
+      Warning
+    </my-button>
+    <my-button type="danger" plain>
+      Danger
+    </my-button>
+  </div>
+
+  <div class="mb-4">
+    <my-button round>
+      Round
+    </my-button>
+    <my-button type="primary" round>
+      Primary
+    </my-button>
+    <my-button type="success" round>
+      Success
+    </my-button>
+    <my-button type="info" round>
+      Info
+    </my-button>
+    <my-button type="warning" round>
+      Warning
+    </my-button>
+    <my-button type="danger" round>
+      Danger
+    </my-button>
+  </div>
+
+  <div>
+    <my-button :icon="Search" circle />
+    <my-button type="primary" :icon="Edit" circle />
+    <my-button type="success" :icon="Check" circle />
+    <my-button type="info" :icon="Message" circle />
+    <my-button type="warning" :icon="Star" circle />
+    <my-button type="danger" :icon="Delete" circle />
+  </div>
 </template>
