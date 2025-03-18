@@ -71,4 +71,12 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
   },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "~/styles/element/index.scss" as *;`,
+      },
+    },
+  },
 })

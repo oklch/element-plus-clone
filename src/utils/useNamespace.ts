@@ -1,4 +1,4 @@
-const namespace = 'el'
+const namespace = 'my'
 const statePrefix = 'is-'
 
 function _bem(namespace: string, block: string, blockSuffix: string, element: string, modifier: string) {
