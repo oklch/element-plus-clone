@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider namespace="ep">
+  <el-config-provider namespace="el">
     <main font-sans text="gray-700 dark:gray-200">
       <RouterView />
       <div text="center 2xl" space-x-2xl>
